@@ -53,7 +53,7 @@ func main() {
 // hello responds to the request with a plain-text "Hello, world" message.
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
-	fmt.Fprintf(w, "Hello!, from D2iQ Dispatch GitOps .\n")
+	fmt.Fprintf(w, "Hello!, from D2iQ Dispatch GitOps ..\n")
 	fmt.Fprintf(w, "Version: %s\n", Version)
 	fmt.Fprintf(w, "Build time: %s\n", Buildtime)
 	fmt.Fprintf(w, "D2iQ CI/CD!\n")
