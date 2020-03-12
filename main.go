@@ -72,6 +72,7 @@ func index(w http.ResponseWriter, r *http.Request) {
   fmt.Fprintf(w, "Hello!, from D2iQ Dispatch CI/CD GitOps!\n")
   fmt.Fprintf(w, "Version: %s\n", Version)
   fmt.Fprintf(w, "Build time: %s\n", Buildtime)
+  fmt.Fprintf(w, "App Version: 20200312-1\n")
   fmt.Fprint(w,"\n")
   fmt.Fprint(w,  "Container hostname: ", Hostname, "\n")
   dt := time.Now()
